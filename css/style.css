@@ -390,10 +390,20 @@ section {
 .contact-item {
     font-size: 1rem;
     color: var(--text-light);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
 }
 
 .contact-item strong {
     color: var(--text-dark);
+}
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    color: var(--primary-color);
 }
 
 /* Form Styles */
