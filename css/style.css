@@ -485,11 +485,41 @@ section {
     border: 1px solid var(--text-light);
     border-radius: 0.375rem;
     transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .social-link:hover {
     color: white;
     border-color: white;
+    transform: translateY(-2px);
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+/* Social media brand colors on hover */
+.social-link:hover .social-icon {
+    transition: var(--transition);
+}
+
+.social-link:nth-child(1):hover {
+    background-color: #0077b5; /* LinkedIn blue */
+    border-color: #0077b5;
+}
+
+.social-link:nth-child(2):hover {
+    background-color: #333; /* GitHub dark */
+    border-color: #333;
+}
+
+.social-link:nth-child(3):hover {
+    background-color: #00bcd4; /* BlueSky blue */
+    border-color: #00bcd4;
 }
 
 .footer-bottom {
@@ -568,6 +598,7 @@ section {
     
     .social-links {
         justify-content: center;
+        flex-wrap: wrap;
     }
 }
 
@@ -586,6 +617,16 @@ section {
     
     section {
         padding: 3rem 0;
+    }
+    
+    .social-link {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.875rem;
+    }
+    
+    .social-icon {
+        width: 18px;
+        height: 18px;
     }
 }
 
