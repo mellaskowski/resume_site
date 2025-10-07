@@ -1,7 +1,7 @@
-# MEL Portfolio Website
+# Mel Portfolio Website
 
-A modern, responsive portfolio website showcasing professional work and skills. Built with HTML5, CSS3, and vanilla JavaScript for optimal performance and accessibility.
-
+Hey, I'm Mel, welcome to my portfolio website showcasing professional work, experience and skills. Built with HTML5, CSS3, and vanilla JavaScript for optimal performance and accessibility. 
+ 
 ## 🌟 Features
 
 - **Responsive Design**: Optimized for all screen sizes from mobile to desktop
