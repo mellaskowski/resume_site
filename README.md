@@ -1,6 +1,6 @@
-# Mel Portfolio Website
+# Mel Laskowski | Software Engineer Portfolio
 
-Hey, I'm Mel, welcome to my portfolio website showcasing professional work, experience and skills. Built with HTML5, CSS3, and vanilla JavaScript for optimal performance and accessibility. 
+Hey, I'm Mel, welcome to my professional portfolio website showcasing 6+ years of software engineering experience, projects, and skills. Built with HTML5, CSS3, and vanilla JavaScript for optimal performance and accessibility. 
  
 ## 🌟 Features
 
@@ -95,12 +95,13 @@ The color scheme is defined in CSS custom properties in `style.css`:
 ## 🎯 Sections
 
 1. **Header**: Fixed navigation with MEL branding
-2. **Hero**: Welcome section with call-to-action buttons
-3. **About**: Personal information and skills showcase
-4. **Portfolio**: Project showcases with links
-5. **Services**: Services offered
-6. **Contact**: Contact form and information
-7. **Footer**: Additional links and social media
+2. **Hero**: Welcome section with professional introduction
+3. **About**: Personal story, education, and technical skills
+4. **Portfolio**: Real projects including Muna Nation, Drag King Nation Bluesky Feed, and Financial Education App
+5. **Services**: Professional services including Full Stack Development, Mobile Apps, API Integration, Accessibility Consulting
+6. **Experience**: Professional timeline with roles at Able Opportunities, Datto/Kaseya, BioFortis, and Comcast
+7. **Contact**: Contact form and professional links
+8. **Footer**: Navigation and social media links
 
 ## 📧 Contact Form
 
