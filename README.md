@@ -1,6 +1,6 @@
 # Mel Laskowski | Software Engineer Portfolio
 
-Hey, I'm Mel, welcome to my professional portfolio website showcasing 6+ years of software engineering experience, projects, and skills. Built with HTML5, CSS3, and vanilla JavaScript for optimal performance and accessibility. Check out the live version of the code here: https://github.com/mellaskowski/resume_site
+Hey, I'm Mel, welcome to my professional portfolio website showcasing 6+ years of software engineering experience, projects, and skills. Built with HTML5, CSS3, and vanilla JavaScript for optimal performance and accessibility. Check out the live version of the code here: https://mellaskowski.github.io/resume_site/
  
 ## 🌟 Features
 
