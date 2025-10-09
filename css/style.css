@@ -249,6 +249,30 @@ section {
     font-weight: 500;
 }
 
+.rit-tiger {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.tiger-image {
+    max-width: 120px;
+    height: auto;
+    transition: var(--transition);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.tiger-image:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+.rit-text {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
 /* Portfolio Section */
 .portfolio-grid {
     display: grid;
