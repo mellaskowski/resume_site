@@ -383,6 +383,13 @@ section {
     flex-shrink: 0;
 }
 
+.company-name {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
 .company-years {
     font-size: 0.75rem;
     color: var(--text-light);
