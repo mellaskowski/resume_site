@@ -254,6 +254,12 @@ section {
     text-align: center;
 }
 
+.tiger-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
 .tiger-image {
     max-width: 120px;
     height: auto;
@@ -261,7 +267,7 @@ section {
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
-.tiger-image:hover {
+.tiger-container:hover .tiger-image {
     transform: scale(1.05);
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
 }
@@ -271,6 +277,84 @@ section {
     font-size: 0.875rem;
     font-weight: 600;
     color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.tiger-container:hover .rit-text {
+    color: var(--text-dark);
+}
+
+.rit-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.tiger-container:hover .rit-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+.tooltip-content {
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    width: 280px;
+    box-shadow: var(--shadow-lg);
+    text-align: left;
+    position: relative;
+}
+
+.tooltip-content::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 8px solid transparent;
+    border-top-color: var(--bg-white);
+}
+
+.tooltip-content::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 9px solid transparent;
+    border-top-color: var(--border-color);
+    margin-top: 1px;
+}
+
+.tooltip-content h4 {
+    color: var(--text-dark);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.tooltip-content p {
+    color: var(--text-light);
+    font-size: 0.875rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+.tooltip-content p:last-child {
+    margin-bottom: 0;
+}
+
+.tooltip-content p strong {
+    color: var(--primary-color);
+    font-weight: 600;
 }
 
 /* Portfolio Section */
@@ -726,6 +810,11 @@ section {
         left: 9px;
         width: 12px;
         height: 12px;
+    }
+    
+    .tooltip-content {
+        width: 250px;
+        padding: 1rem;
     }
     
     .footer-content {
