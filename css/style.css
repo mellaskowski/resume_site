@@ -357,6 +357,39 @@ section {
     font-weight: 600;
 }
 
+.coop-section {
+    margin: 0.75rem 0;
+}
+
+.company-logos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.company-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.company-logo-img {
+    height: 36px;
+    width: auto;
+    max-width: 120px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.company-years {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
 /* Portfolio Section */
 .portfolio-grid {
     display: grid;
