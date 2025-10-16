@@ -611,11 +611,43 @@ section {
     align-items: start;
 }
 
+.contact-info h3 {
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+    font-size: 1.75rem;
+}
+
 .contact-info p {
     font-size: 1.125rem;
     color: var(--text-light);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     line-height: 1.7;
+}
+
+.availability-status {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: var(--bg-light);
+    border-radius: 0.75rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+.availability-status h4 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    font-size: 1.1rem;
+}
+
+.availability-status p {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.availability-status p:last-child {
+    margin-bottom: 0;
+    font-style: italic;
+    color: var(--text-light);
 }
 
 .contact-details {
