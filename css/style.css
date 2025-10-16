@@ -636,6 +636,17 @@ section {
     color: var(--text-dark);
 }
 
+.contact-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contact-item a:hover {
+    color: var(--text-dark);
+    text-decoration: underline;
+}
+
 .contact-icon {
     width: 20px;
     height: 20px;
