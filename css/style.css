@@ -502,6 +502,11 @@ section {
     letter-spacing: 0.5px;
 }
 
+/* Special styling for live demo status */
+.prototype-status.live-demo {
+    background-color: #10b981;
+}
+
 .prototype-label {
     background-color: #f59e0b;
     color: white;
