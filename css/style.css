@@ -441,6 +441,46 @@ section {
     font-weight: 600;
 }
 
+.prototype-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--bg-light) 0%, #e3f2fd 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.prototype-icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+}
+
+.prototype-status {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.prototype-label {
+    background-color: #f59e0b;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
 .portfolio-content {
     padding: 1.5rem;
 }
