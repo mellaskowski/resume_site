@@ -163,6 +163,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize
     highlightNavigation();
+
+    // Cycling text animation for hero subtitle
+    const textItems = document.querySelectorAll('.text-item');
+    let currentIndex = 0;
+    
+    function cycleText() {
+        // Remove active class from current item
+        textItems[currentIndex].classList.remove('active');
+        textItems[currentIndex].classList.add('fade-out');
+        
+        // Move to next item
+        currentIndex = (currentIndex + 1) % textItems.length;
+        
+        // Add active class to new item after a short delay
+        setTimeout(() => {
+            // Remove fade-out from all items and add active to current
+            textItems.forEach(item => item.classList.remove('fade-out'));
+            textItems[currentIndex].classList.add('active');
+        }, 300);
+    }
+
+    // Start cycling every 3 seconds if text items exist
+    if (textItems.length > 0) {
+        setInterval(cycleText, 3000);
+    }
 });
 
 // Utility function to debounce scroll events
