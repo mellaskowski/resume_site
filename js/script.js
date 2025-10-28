@@ -188,6 +188,38 @@ document.addEventListener('DOMContentLoaded', function() {
     if (textItems.length > 0) {
         setInterval(cycleText, 3000);
     }
+
+    // Horizontal timeline click-to-scroll functionality
+    const timelineMilestones = document.querySelectorAll('.timeline-milestone.company');
+    
+    timelineMilestones.forEach(milestone => {
+        milestone.addEventListener('click', function() {
+            const company = this.getAttribute('data-company');
+            const targetId = company + '-experience';
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                // Highlight clicked milestone
+                timelineMilestones.forEach(ms => ms.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Smooth scroll to target experience
+                const headerHeight = document.querySelector('.header').offsetHeight;
+                const targetPosition = targetElement.offsetTop - headerHeight - 20;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+                
+                // Add temporary highlight to target experience
+                targetElement.classList.add('highlight');
+                setTimeout(() => {
+                    targetElement.classList.remove('highlight');
+                }, 2000);
+            }
+        });
+    });
 });
 
 // Utility function to debounce scroll events
