@@ -430,6 +430,59 @@ section {
     margin-left: 1rem;
 }
 
+/* Location Images Container */
+.location-images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .location-images {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+/* Washington DC Image */
+.dc-image {
+    text-align: center;
+}
+
+.dc-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dc-image-img {
+    max-width: 120px;
+    height: auto;
+    border-radius: 0.5rem;
+    transition: var(--transition);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.dc-container:hover .dc-image-img {
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+.dc-text {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.dc-container:hover .dc-text {
+    color: var(--text-dark);
+}
+
 /* Portfolio Section */
 .portfolio-grid {
     display: grid;
