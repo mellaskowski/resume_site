@@ -731,6 +731,26 @@ section {
     margin-bottom: 1rem;
 }
 
+.company-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.company-logo {
+    height: 32px;
+    width: auto;
+    max-width: 100px;
+    object-fit: contain;
+    margin-left: auto;
+}
+
+.company-header h4 {
+    margin-bottom: 0;
+    flex: 1;
+}
+
 .timeline-content ul {
     list-style: none;
     padding: 0;
