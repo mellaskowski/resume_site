@@ -483,6 +483,24 @@ section {
     color: var(--text-dark);
 }
 
+.dc-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.dc-container:hover .dc-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px);
+}
+
 /* Portfolio Section */
 .portfolio-grid {
     display: grid;
