@@ -188,6 +188,31 @@ document.addEventListener('DOMContentLoaded', function() {
     if (textItems.length > 0) {
         setInterval(cycleText, 3000);
     }
+
+    // Tech Media Collapsible Functionality
+    const techMediaToggle = document.getElementById('tech-media-toggle');
+    const collapsibleContent = document.querySelector('.collapsible-content');
+    
+    if (techMediaToggle && collapsibleContent) {
+        techMediaToggle.addEventListener('click', function() {
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            
+            if (isExpanded) {
+                // Collapse
+                this.setAttribute('aria-expanded', 'false');
+                collapsibleContent.classList.remove('expanded');
+                collapsibleContent.style.display = 'none';
+            } else {
+                // Expand
+                this.setAttribute('aria-expanded', 'true');
+                collapsibleContent.style.display = 'grid';
+                // Use setTimeout to allow display change to take effect before adding expanded class
+                setTimeout(() => {
+                    collapsibleContent.classList.add('expanded');
+                }, 10);
+            }
+        });
+    }
 });
 
 // Utility function to debounce scroll events
