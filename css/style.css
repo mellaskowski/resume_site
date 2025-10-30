@@ -782,7 +782,7 @@ section {
 
 .tech-media {
     background-color: var(--bg-light);
-    padding: 5rem 0;
+    padding: 5rem 0 3rem 0;
 }
 
 .tech-media > .container > h3 {
