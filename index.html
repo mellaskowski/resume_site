@@ -135,16 +135,21 @@
                 </div>
                         <!-- Tech Media Section -->
                <div class="tech-media">
-                <div class="tech-header">
-                    <h3 class="tech-title">My Fav Tech Media</h3>
-                    <button class="collapse-btn" id="tech-media-toggle" aria-expanded="false" aria-label="Toggle tech media content">
-                        <svg class="collapse-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <h3 class="tech-title">My Fav Tech Media</h3>
+                <div class="description-with-buttons">
+                    <button class="collapse-btn left-btn" data-target="tech-media-content" aria-expanded="false" aria-label="Toggle tech media content">
+                        <svg class="collapse-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <p class="section-description">Staying informed with trusted voices in technology, policy, and digital ethics to contribute efficiently and effectively to the global software industry. While enjoying dsytopian and true world realties of the potential consequences of certain tools and technologies.</p>
+                    <button class="collapse-btn right-btn" data-target="tech-media-content" aria-expanded="false" aria-label="Toggle tech media content">
+                        <svg class="collapse-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M6 9l6 6 6-6"/>
                         </svg>
                     </button>
                 </div>
-                <p class="section-description">Staying informed with trusted voices in technology, policy, and digital ethics to contribute efficiently and effectively to the global software industry. While enjoying dsytopian and true world realties of the potential consequences of certain tools and technologies.</p>
-                <div class="media-grid collapsible-content" style="display: none;">
+                <div class="media-grid collapsible-content" id="tech-media-content" style="display: none;">
                     <div class="media-category">
                         <h3>📰 Journalism & Analysis</h3>
                         <div class="media-items">

@@ -190,27 +190,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Tech Media Collapsible Functionality
-    const techMediaToggle = document.getElementById('tech-media-toggle');
-    const collapsibleContent = document.querySelector('.collapsible-content');
+    const collapseButtons = document.querySelectorAll('.collapse-btn');
+    const collapsibleContent = document.getElementById('tech-media-content');
     
-    if (techMediaToggle && collapsibleContent) {
-        techMediaToggle.addEventListener('click', function() {
-            const isExpanded = this.getAttribute('aria-expanded') === 'true';
-            
-            if (isExpanded) {
-                // Collapse
-                this.setAttribute('aria-expanded', 'false');
-                collapsibleContent.classList.remove('expanded');
-                collapsibleContent.style.display = 'none';
-            } else {
-                // Expand
-                this.setAttribute('aria-expanded', 'true');
-                collapsibleContent.style.display = 'grid';
-                // Use setTimeout to allow display change to take effect before adding expanded class
-                setTimeout(() => {
-                    collapsibleContent.classList.add('expanded');
-                }, 10);
-            }
+    if (collapseButtons.length > 0 && collapsibleContent) {
+        collapseButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                
+                if (isExpanded) {
+                    // Collapse
+                    collapseButtons.forEach(btn => btn.setAttribute('aria-expanded', 'false'));
+                    collapsibleContent.classList.remove('expanded');
+                    collapsibleContent.style.display = 'none';
+                } else {
+                    // Expand
+                    collapseButtons.forEach(btn => btn.setAttribute('aria-expanded', 'true'));
+                    collapsibleContent.style.display = 'grid';
+                    // Use setTimeout to allow display change to take effect before adding expanded class
+                    setTimeout(() => {
+                        collapsibleContent.classList.add('expanded');
+                    }, 10);
+                }
+            });
         });
     }
 });
