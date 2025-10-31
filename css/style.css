@@ -283,7 +283,6 @@ section {
 }
 
 .rit-tiger {
-    margin-top: 1.0rem;
     text-align: center;
 }
 
@@ -299,6 +298,7 @@ section {
     object-fit: cover;
     transition: var(--transition);
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    margin-top: .75rem;
 }
 
 .tiger-container:hover .tiger-image {
