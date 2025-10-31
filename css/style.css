@@ -305,6 +305,12 @@ section {
     visibility: visible;
 }
 
+.skill-tag-container:hover .skill-tag {
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.3);
+    transform: translateY(-2px);
+}
+
 .rit-tiger {
     text-align: center;
 }
