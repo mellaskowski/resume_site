@@ -307,13 +307,19 @@ section {
 }
 
 .rit-text {
-    margin-top: 0.5rem;
+    margin-top: auto;
+    margin-bottom: 0;
+    padding-top: 0.5rem;
     font-size: 0.875rem;
     font-weight: 600;
     color: var(--primary-color);
     transition: var(--transition);
     text-align: center;
     line-height: 1.2;
+    min-height: 2.4em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .tiger-container:hover .rit-text {
@@ -452,7 +458,18 @@ section {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    min-height: 140px;
+    min-height: 160px;
+}
+
+.location-images .tiger-container,
+.location-images .dc-container,
+.location-images .passion-container,
+.location-images .environment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
 @media (max-width: 768px) {
@@ -494,13 +511,19 @@ section {
 }
 
 .dc-text {
-    margin-top: 0.5rem;
+    margin-top: auto;
+    margin-bottom: 0;
+    padding-top: 1.2rem;
     font-size: 0.875rem;
     font-weight: 600;
     color: var(--primary-color);
     transition: var(--transition);
     text-align: center;
     line-height: 1.2;
+    min-height: 2.4em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .dc-container:hover .dc-text {
@@ -551,13 +574,19 @@ section {
 }
 
 .passion-text, .environment-text {
-    margin-top: 0.5rem;
+    margin-top: auto;
+    margin-bottom: 0;
+    padding-top: 0.5rem;
     font-size: 0.875rem;
     font-weight: 600;
     color: var(--primary-color);
     transition: var(--transition);
     text-align: center;
     line-height: 1.2;
+    min-height: 2.4em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .passion-container:hover .passion-text,
