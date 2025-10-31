@@ -282,6 +282,29 @@ section {
     font-weight: 500;
 }
 
+.skill-tag-container {
+    position: relative;
+    display: inline-block;
+}
+
+.skill-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.skill-tag-container:hover .skill-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
 .rit-tiger {
     text-align: center;
 }
