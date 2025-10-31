@@ -283,6 +283,7 @@ section {
 }
 
 .rit-tiger {
+    margin-top: 1.0rem;
     text-align: center;
 }
 
@@ -496,8 +497,8 @@ section {
 }
 
 .dc-image-img {
-    width: 100px;
-    height: 100px;
+    width: 180px;
+    height: 110px;
     object-fit: cover;
     border-radius: 0.5rem;
     transition: var(--transition);
