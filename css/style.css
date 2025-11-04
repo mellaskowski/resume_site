@@ -857,6 +857,8 @@ section {
     z-index: 2;
     flex: 1;
     min-width: 0;
+    padding: 0 0.25rem;
+    min-height: 5rem;
 }
 
 .timeline-milestone:hover {
@@ -869,7 +871,7 @@ section {
     border-radius: 50%;
     background-color: white;
     border: 3px solid var(--primary-color);
-    margin: 0 auto 1.2rem;
+    margin: 0 auto 2.5rem;
     transition: var(--transition);
 }
 
@@ -889,11 +891,15 @@ section {
     font-size: 0.75rem;
     font-weight: 600;
     color: var(--text-dark);
-    line-height: 1.2;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    line-height: 1.5;
+    white-space: normal;
+    word-break: break-word;
+    hyphens: auto;
     max-width: 100%;
+    min-height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .milestone-label .year {
