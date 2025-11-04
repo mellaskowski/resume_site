@@ -832,7 +832,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 1200px;
+    width: 100%;
     padding: 0 2rem;
     position: relative;
 }
@@ -855,6 +855,8 @@ section {
     cursor: pointer;
     transition: var(--transition);
     z-index: 2;
+    flex: 1;
+    min-width: 0;
 }
 
 .timeline-milestone:hover {
@@ -889,6 +891,9 @@ section {
     color: var(--text-dark);
     line-height: 1.2;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 
 .milestone-label .year {
@@ -912,11 +917,12 @@ section {
     .horizontal-timeline {
         margin: 2rem -1rem;
         border-radius: 0;
+        padding: 1.5rem 0;
     }
     
     .timeline-track {
-        min-width: 800px;
         padding: 0 1rem;
+        gap: 0.5rem;
     }
     
     .timeline-track::before {
@@ -924,6 +930,24 @@ section {
         right: 1rem;
     }
     
+    .milestone-label {
+        font-size: 0.65rem;
+        white-space: normal;
+        word-break: break-word;
+    }
+    
+    .milestone-label .year {
+        font-size: 0.55rem;
+    }
+    
+    .milestone-marker {
+        width: 12px;
+        height: 12px;
+        margin: 0 auto 0.8rem;
+    }
+}
+
+@media (max-width: 1000px) {
     .milestone-label {
         font-size: 0.7rem;
     }
