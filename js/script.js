@@ -189,37 +189,32 @@ document.addEventListener('DOMContentLoaded', function() {
         setInterval(cycleText, 3000);
     }
 
-    // Horizontal timeline click-to-scroll functionality
-    const timelineMilestones = document.querySelectorAll('.timeline-milestone.company');
+    // Tech Media Collapsible Functionality
+    const collapseButtons = document.querySelectorAll('.collapse-btn');
+    const collapsibleContent = document.getElementById('tech-media-content');
     
-    timelineMilestones.forEach(milestone => {
-        milestone.addEventListener('click', function() {
-            const company = this.getAttribute('data-company');
-            const targetId = company + '-experience';
-            const targetElement = document.getElementById(targetId);
-            
-            if (targetElement) {
-                // Highlight clicked milestone
-                timelineMilestones.forEach(ms => ms.classList.remove('active'));
-                this.classList.add('active');
+    if (collapseButtons.length > 0 && collapsibleContent) {
+        collapseButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
                 
-                // Smooth scroll to target experience
-                const headerHeight = document.querySelector('.header').offsetHeight;
-                const targetPosition = targetElement.offsetTop - headerHeight - 20;
-                
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-                
-                // Add temporary highlight to target experience
-                targetElement.classList.add('highlight');
-                setTimeout(() => {
-                    targetElement.classList.remove('highlight');
-                }, 2000);
-            }
+                if (isExpanded) {
+                    // Collapse
+                    collapseButtons.forEach(btn => btn.setAttribute('aria-expanded', 'false'));
+                    collapsibleContent.classList.remove('expanded');
+                    collapsibleContent.style.display = 'none';
+                } else {
+                    // Expand
+                    collapseButtons.forEach(btn => btn.setAttribute('aria-expanded', 'true'));
+                    collapsibleContent.style.display = 'grid';
+                    // Use setTimeout to allow display change to take effect before adding expanded class
+                    setTimeout(() => {
+                        collapsibleContent.classList.add('expanded');
+                    }, 10);
+                }
+            });
         });
-    });
+    }
 });
 
 // Utility function to debounce scroll events
