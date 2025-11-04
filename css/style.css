@@ -933,6 +933,12 @@ section {
     }
 }
 
+@media (max-width: 850px) {
+    .horizontal-timeline {
+        display: none;
+    }
+}
+
 .timeline {
     max-width: 800px;
     margin: 0 auto;
