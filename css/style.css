@@ -876,10 +876,15 @@ section {
 }
 
 .timeline-milestone.graduation .milestone-marker {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-    width: 20px;
-    height: 20px;
+    background-image: url('../images/RIT_TIGER.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: var(--primary-color);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .timeline-milestone:hover .milestone-marker {
