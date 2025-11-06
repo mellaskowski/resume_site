@@ -1665,3 +1665,251 @@ textarea:focus {
 .hero-content {
     animation: fadeInUp 0.8s ease-out;
 }
+
+/* AI Policy Page Styles */
+.ai-policy-hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    padding: 8rem 0 4rem;
+    text-align: center;
+}
+
+.ai-policy-hero .hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.ai-policy-hero .hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.ai-policy-hero .hero-description {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+/* Core Principles Section */
+.ai-principles {
+    padding: 5rem 0;
+    background-color: var(--bg-light);
+}
+
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.principle-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.principle-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.principle-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.principle-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.principle-card p {
+    line-height: 1.6;
+    color: var(--text-light);
+}
+
+/* Policy Positions Section */
+.policy-positions {
+    padding: 5rem 0;
+}
+
+.position-item {
+    background: white;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--accent-color);
+}
+
+.position-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.position-item p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.position-item ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.position-item li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+.position-item li::before {
+    content: "→";
+    color: var(--accent-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Regulatory Approach Section */
+.regulatory-approach {
+    padding: 5rem 0;
+    background-color: var(--bg-light);
+}
+
+.approach-content {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.approach-text h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.approach-text h3:first-child {
+    margin-top: 0;
+}
+
+.approach-text p {
+    line-height: 1.6;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+/* AI Resources Section */
+.ai-resources {
+    padding: 5rem 0;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.resource-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.resource-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.resource-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.resource-item p {
+    line-height: 1.6;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.resource-item a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.resource-item a:hover {
+    color: var(--primary-color);
+}
+
+/* AI Contact Section */
+.ai-contact {
+    padding: 5rem 0;
+    background-color: var(--bg-light);
+    text-align: center;
+}
+
+.ai-contact .contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.ai-contact p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.contact-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-link.active {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .ai-policy-hero {
+        padding: 6rem 0 3rem;
+    }
+    
+    .ai-policy-hero .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .principles-grid,
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .position-item {
+        padding: 1.5rem;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
