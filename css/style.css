@@ -1820,14 +1820,139 @@ textarea:focus {
     padding: 5rem 0;
 }
 
-.resources-grid {
+.subsection-title {
+    font-size: 1.75rem;
+    color: var(--text-dark);
+    margin: 4rem 0 2rem 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Book Gallery Styles */
+.book-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+    justify-items: center;
+}
+
+.book-item {
+    text-align: center;
+}
+
+.book-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.book-cover-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.book-cover {
+    width: 160px;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.book-cover:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.book-title {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    transition: var(--transition);
+}
+
+.book-link:hover .book-title {
+    color: var(--accent-color);
+}
+
+/* Book Tooltip Styles */
+.book-tooltip {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.book-cover-container:hover .book-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-10px);
+}
+
+.book-tooltip .tooltip-content {
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    width: 280px;
+    box-shadow: var(--shadow-lg);
+    text-align: left;
+    position: relative;
+}
+
+.book-tooltip .tooltip-content::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 8px solid transparent;
+    border-top-color: var(--bg-white);
+}
+
+.book-tooltip .tooltip-content::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 9px solid transparent;
+    border-top-color: var(--border-color);
+    margin-top: 1px;
+}
+
+.book-tooltip h4 {
+    color: var(--text-dark);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.book-tooltip p {
+    color: var(--text-light);
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Organizations Grid */
+.org-resources-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
-.resource-item {
+.org-item {
     background: white;
     padding: 2rem;
     border-radius: 1rem;
@@ -1835,49 +1960,31 @@ textarea:focus {
     transition: var(--transition);
 }
 
-.resource-item:hover {
+.org-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.resource-item h4 {
+.org-item h4 {
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
-.resource-item p {
+.org-item p {
     line-height: 1.6;
     color: var(--text-light);
     margin-bottom: 1.5rem;
 }
 
-.resource-item a {
+.org-item a {
     color: var(--accent-color);
     text-decoration: none;
     font-weight: 600;
     transition: var(--transition);
 }
 
-.resource-item a:hover {
+.org-item a:hover {
     color: var(--primary-color);
-}
-
-.resource-image {
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.resource-book-cover {
-    width: 120px;
-    height: auto;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: var(--transition);
-}
-
-.resource-item:hover .resource-book-cover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* AI Contact Section */
