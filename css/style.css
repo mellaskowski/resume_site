@@ -1676,14 +1676,16 @@ textarea:focus {
 
 .ai-policy-hero .hero-title {
     font-size: 3rem;
-    margin-bottom: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .ai-policy-hero .hero-subtitle {
     font-size: 1.25rem;
-    padding-top: 1rem;
-    margin-bottom: 1rem;
+    /* padding-top: 1rem; */
+    /* padding-bottom: 1rem; */
+    height: auto;
     line-height: 1.6;
     opacity: 1;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
