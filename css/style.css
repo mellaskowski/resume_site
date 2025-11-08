@@ -1862,6 +1862,24 @@ textarea:focus {
     color: var(--primary-color);
 }
 
+.resource-image {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.resource-book-cover {
+    width: 120px;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.resource-item:hover .resource-book-cover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
 /* AI Contact Section */
 .ai-contact {
     padding: 5rem 0;
