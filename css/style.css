@@ -1954,6 +1954,118 @@ textarea:focus {
     margin-top: 2rem;
 }
 
+/* Recommendations Page Styles */
+.recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.rec-item {
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.rec-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.rec-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.rec-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.rec-item:hover .rec-cover {
+    transform: scale(1.05);
+}
+
+.rec-content {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.rec-content h4 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.rec-genre {
+    color: var(--accent-color);
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.rec-content p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.rec-category {
+    margin: 4rem 0 2rem 0;
+}
+
+.rec-category h3 {
+    color: var(--text-dark);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+/* Cultural Moments Styles */
+.culture-moments {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.moment-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    transition: var(--transition);
+}
+
+.moment-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.moment-item h3 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.moment-item p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin: 0;
+}
+
 .org-item {
     background: white;
     padding: 2rem;
