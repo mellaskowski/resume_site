@@ -2060,6 +2060,30 @@ textarea:focus {
     margin: 0;
 }
 
+.rec-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.detail-tag {
+    background: var(--light-bg);
+    color: var(--text-dark);
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.detail-tag:hover {
+    background: var(--accent-color);
+    color: white;
+    transform: translateY(-1px);
+}
+
 .rec-category {
     margin: 4rem 0 2rem 0;
 }
