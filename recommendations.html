@@ -36,9 +36,9 @@
         <section id="overview" class="ai-policy-hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="hero-title">My Recommendations</h1>
+                    <h1 class="hero-title">Recommendations</h1>
                     <p class="hero-subtitle">
-                        A curated catalog of the music and films that have shaped my worldview and continue to inspire me.
+                        A curated catalog of the music, films, and culture that have shaped my worldview and continue to inspire me.
                     </p>
                     <p class="hero-description">
                         From groundbreaking albums to thought-provoking cinema, these are the creative works and cultural touchstones 
@@ -97,53 +97,158 @@
                     These are my <a href="https://letterboxd.com/movies4queers/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-color); text-decoration: none; border-bottom: 1px solid var(--accent-color);">Letterboxd</a> Top 4 - films that have profoundly shaped my perspective and continue to inspire me.
                 </p>
                 
-                <div class="recommendations-grid">
-                    <div class="rec-item">
-                        <div class="rec-image">
-                            <img src="images/film/zola.png" alt="Zola" class="rec-cover">
+                <div class="film-grid">
+                    <div class="film-item">
+                        <div class="film-poster">
+                            <img src="images/film/zola.png" alt="Zola" class="poster-image">
                         </div>
-                        <div class="rec-content">
+                        <div class="film-info">
                             <h4>Zola (2020)</h4>
-                            <p class="rec-genre">Dark Comedy / Crime</p>
-                            <p>Janicza Bravo's wild adaptation of the viral Twitter thread. A surreal, darkly funny journey that captures the chaos of social media storytelling and female friendship gone wrong.</p>
+                            <p class="film-genre">Dark Comedy / Crime</p>
+                            <p class="film-desc">Janicza Bravo's wild adaptation of the viral Twitter thread. A surreal, darkly funny journey that captures the chaos of social media storytelling.</p>
                         </div>
                     </div>
 
-                    <div class="rec-item">
-                        <div class="rec-image">
-                            <img src="images/film/clue.png" alt="Clue" class="rec-cover">
+                    <div class="film-item">
+                        <div class="film-poster">
+                            <img src="images/film/clue.png" alt="Clue" class="poster-image">
                         </div>
-                        <div class="rec-content">
+                        <div class="film-info">
                             <h4>Clue (1985)</h4>
-                            <p class="rec-genre">Mystery Comedy / Cult Classic</p>
-                            <p>Jonathan Lynn's brilliant board game adaptation with rapid-fire dialogue and perfect comic timing. A murder mystery that's endlessly rewatchable, with every actor delivering iconic performances.</p>
+                            <p class="film-genre">Mystery Comedy / Cult Classic</p>
+                            <p class="film-desc">Jonathan Lynn's brilliant board game adaptation with rapid-fire dialogue and perfect comic timing. A murder mystery that's endlessly rewatchable.</p>
                         </div>
                     </div>
 
-                    <div class="rec-item">
-                        <div class="rec-image">
-                            <img src="images/film/drive-away-dolls.png" alt="Drive-Away Dolls" class="rec-cover">
+                    <div class="film-item">
+                        <div class="film-poster">
+                            <img src="images/film/drive-away-dolls.png" alt="Drive-Away Dolls" class="poster-image">
                         </div>
-                        <div class="rec-content">
+                        <div class="film-info">
                             <h4>Drive-Away Dolls (2024)</h4>
-                            <p class="rec-genre">Queer Crime Comedy / Road Trip</p>
-                            <p>Ethan Coen's raucous lesbian road trip comedy filled with stolen briefcases, dildo sculptures, and pure chaotic energy. A celebration of queer joy and female friendship with pitch-perfect absurdist humor.</p>
+                            <p class="film-genre">Queer Crime Comedy / Road Trip</p>
+                            <p class="film-desc">Ethan Coen's raucous lesbian road trip comedy filled with stolen briefcases and pure chaotic energy. A celebration of queer joy.</p>
                         </div>
                     </div>
 
-                    <div class="rec-item">
-                        <div class="rec-image">
-                            <img src="images/film/bottoms.png" alt="Bottoms cover with cast of film" class="rec-cover">
+                    <div class="film-item">
+                        <div class="film-poster">
+                            <img src="images/film/bottoms.png" alt="Bottoms cover with cast of film" class="poster-image">
                         </div>
-                        <div class="rec-content">
+                        <div class="film-info">
                             <h4>Bottoms (2023)</h4>
-                            <p class="rec-genre">Teen Comedy / LGBTQ+</p>
-                            <p>Emma Seligman's hilariously unhinged high school satire about two queer students starting a fight club. Sharp, subversive, and absolutely committed to its own ridiculous premise.</p>
+                            <p class="film-genre">Teen Comedy / LGBTQ+</p>
+                            <p class="film-desc">Emma Seligman's hilariously unhinged high school satire about two queer students starting a fight club. Sharp and subversive.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <style>
+        /* Film-specific grid layout */
+        .film-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .film-item {
+            background: white;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            max-width: 280px;
+            margin: 0 auto;
+        }
+
+        .film-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .film-poster {
+            width: 100%;
+            height: 320px;
+            overflow: hidden;
+        }
+
+        .poster-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .film-item:hover .poster-image {
+            transform: scale(1.05);
+        }
+
+        .film-info {
+            padding: 1rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .film-info h4 {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .film-genre {
+            color: var(--accent-color);
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .film-desc {
+            color: var(--text-light);
+            line-height: 1.5;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 1200px) {
+            .film-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.25rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .film-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+            
+            .film-poster {
+                height: 280px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .film-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .film-item {
+                max-width: 100%;
+            }
+        }
+        </style>
 
 
 
