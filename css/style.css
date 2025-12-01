@@ -2220,3 +2220,75 @@ textarea:focus {
         align-items: center;
     }
 }
+
+/* Visiting DC Section */
+.visiting-dc {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, var(--bg-light) 0%, #e0f2fe 100%);
+    margin-top: 2rem;
+}
+
+.visiting-dc-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.visiting-dc h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.visiting-dc-subtitle {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--accent-color);
+    color: white;
+    padding: 0.875rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+.cta-button:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.cta-icon {
+    transition: var(--transition);
+}
+
+.cta-button:hover .cta-icon {
+    transform: translateX(2px);
+}
+
+@media (max-width: 768px) {
+    .visiting-dc {
+        padding: 3rem 0;
+        margin-top: 1.5rem;
+    }
+    
+    .visiting-dc h2 {
+        font-size: 2rem;
+    }
+    
+    .visiting-dc-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+}
