@@ -184,6 +184,29 @@ body {
     line-height: 1.7;
 }
 
+/* Creative Design Portfolio Styling */
+.highlight-text {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(102, 126, 234, 0.1);
+}
+
+.emphasis-text {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(102, 126, 234, 0.1);
+}
+
+.readable-bg {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 1rem 0;
+}
+
 .hero-buttons {
     display: flex;
     gap: 1rem;
