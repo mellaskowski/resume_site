@@ -887,6 +887,23 @@ section {
     overflow: hidden;
 }
 
+.timeline-logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.timeline-milestone.company .milestone-marker {
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
 .timeline-milestone:hover .milestone-marker {
     transform: scale(1.2);
     box-shadow: 0 0 0 4px rgba(var(--primary-color-rgb), 0.2);
