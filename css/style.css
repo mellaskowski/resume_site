@@ -813,6 +813,28 @@ section {
     line-height: 1.6;
 }
 
+.clickable-service {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.clickable-service:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+}
+
+.clickable-service:hover h3,
+.clickable-service:hover p {
+    color: white;
+}
+
+.clickable-service:hover .service-icon {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
 /* Experience Section */
 .experience {
     background-color: var(--bg-light);

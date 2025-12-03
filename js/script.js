@@ -215,6 +215,16 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    // Clickable service items
+    document.querySelectorAll('.clickable-service').forEach(service => {
+        service.addEventListener('click', function() {
+            const link = this.getAttribute('data-link');
+            if (link) {
+                window.location.href = link;
+            }
+        });
+    });
 });
 
 // Utility function to debounce scroll events
