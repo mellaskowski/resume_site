@@ -858,6 +858,31 @@ section {
     transition: transform 0.3s ease;
 }
 
+/* Clickable Skills */
+.clickable-skill {
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.clickable-skill:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.clickable-skill:after {
+    content: "→";
+    margin-left: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.clickable-skill:hover:after {
+    opacity: 1;
+}
+
 /* Experience Section */
 .experience {
     background-color: var(--bg-light);
